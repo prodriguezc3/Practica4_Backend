@@ -8,8 +8,8 @@ import {
   fromModelToTarea,
 } from "./utils.ts";
 
-const url = Deno.env.get("MONGO_URL");
-
+//const url = Deno.env.get("MONGO_URL");
+const url = "mongodb+srv://paularodriguezcubasextra:123456A@cluster0.la0kd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 if (!url) {
   console.error("Sin conexion");
   //Deno.exit(1);  //He tenido que comentar el deno.exit ya que deno.deploy me daba error si no lo hacia
